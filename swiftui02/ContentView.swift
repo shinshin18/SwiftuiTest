@@ -82,6 +82,9 @@ struct ContentView: View {
                     NavigationLink(destination: screen24()) {
                         Text("地図 MapKit")
                     }
+                    NavigationLink(destination: screen25()) {
+                        Text("画面遷移 NavigationStack")
+                    }
                 }
             }
             .navigationTitle("NavigationBar")
