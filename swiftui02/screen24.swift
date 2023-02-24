@@ -6,28 +6,22 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct screen24: View {
+    @State  var region = MKCoordinateRegion(
+        center : CLLocationCoordinate2D(
+            latitude: 35.710057714926265,   // 緯度
+            longitude: 139.81071829999996   // 経度
+        ),
+        latitudinalMeters: 1000.0, // 南北
+        longitudinalMeters: 1000.0 // 東西
+    )
+
     var body: some View {
-        Text("こんにちはああああああああああああああああああああああああああああいうえお")
-            .background(Color.blue)
-            .border(Color.red, width: 3)
-            .onAppear {
-                print("screen24 表示された！")
-                self.dispatchQueue()
-            }
-    }
-    
-    func dispatchQueue() {
-        print(#line, Date().description)
-        DispatchQueue.global(qos: .userInitiated).async {
-            Thread.sleep(forTimeInterval: 3)
-            print(#line)
-            DispatchQueue.main.async {
-                print(#line)
-            }
-        }
-        print(#line)
+        // 地図を表示
+        Map(coordinateRegion: $region)
+            .edgesIgnoringSafeArea(.bottom)
     }
 }
 

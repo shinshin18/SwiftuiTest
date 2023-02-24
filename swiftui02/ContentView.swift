@@ -80,7 +80,7 @@ struct ContentView: View {
                         Text("サイドメニュー")
                     }
                     NavigationLink(destination: screen24()) {
-                        Text("諸々")
+                        Text("地図 MapKit")
                     }
                 }
             }
