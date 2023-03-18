@@ -85,6 +85,12 @@ struct ContentView: View {
                     NavigationLink(destination: screen25()) {
                         Text("画面遷移 NavigationStack")
                     }
+                    NavigationLink(destination: screen26()) {
+                        Text("プロジェクト内ファイル読み込み")
+                    }
+                    NavigationLink(destination: screen27()) {
+                        Text("諸々")
+                    }
                 }
             }
             .navigationTitle("NavigationBar")
