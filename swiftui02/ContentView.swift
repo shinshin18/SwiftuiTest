@@ -89,6 +89,12 @@ struct ContentView: View {
                         Text("プロジェクト内ファイル読み込み")
                     }
                     NavigationLink(destination: screen27()) {
+                        Text("ViewModifier")
+                    }
+                    NavigationLink(destination: screen28()) {
+                        Text("Toast")
+                    }
+                    NavigationLink(destination: screen29()) {
                         Text("諸々")
                     }
                 }
