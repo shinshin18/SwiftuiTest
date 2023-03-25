@@ -98,6 +98,9 @@ struct ContentView: View {
                         Text("吹き出し")
                     }
                     NavigationLink(destination: screen30()) {
+                        Text("ピンチインアウト")
+                    }
+                    NavigationLink(destination: screen31()) {
                         Text("諸々")
                     }
                 }
