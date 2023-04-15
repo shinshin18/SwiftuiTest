@@ -101,6 +101,9 @@ struct ContentView: View {
                         Text("ピンチインアウト")
                     }
                     NavigationLink(destination: screen31()) {
+                        Text("背景透明")
+                    }
+                    NavigationLink(destination: screen32()) {
                         Text("諸々")
                     }
                 }
