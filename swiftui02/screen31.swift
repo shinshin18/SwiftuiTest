@@ -33,6 +33,12 @@ struct screen31: View {
                     }
                 }
                 .background(BackgroundClearView())
+                .gesture(DragGesture()
+                    .onEnded({ value in
+                        if value.translation.height > 100 {
+                            fullScreenCover.toggle()
+                        }
+                    }))
             }
             .sheet(isPresented: $sheet) {
                 ZStack {

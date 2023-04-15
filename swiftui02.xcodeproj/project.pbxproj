@@ -17,6 +17,7 @@
 		C5A4567B28DD633300285E5C /* screen18.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A4567A28DD633300285E5C /* screen18.swift */; };
 		C5A4567D28DD696D00285E5C /* screen19.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A4567C28DD696D00285E5C /* screen19.swift */; };
 		C8117B7F29EA498B0027CD93 /* screen32.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8117B7E29EA498B0027CD93 /* screen32.swift */; };
+		C8117B8129EA7D660027CD93 /* screen33.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8117B8029EA7D660027CD93 /* screen33.swift */; };
 		C812AE362931C0A200017D31 /* screen23.swift in Sources */ = {isa = PBXBuildFile; fileRef = C812AE352931C0A200017D31 /* screen23.swift */; };
 		C812AE532931E2F900017D31 /* screen24.swift in Sources */ = {isa = PBXBuildFile; fileRef = C812AE522931E2F900017D31 /* screen24.swift */; };
 		C8337A6E28DC769B001F9A02 /* screen17.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8337A6D28DC769B001F9A02 /* screen17.swift */; };
@@ -60,6 +61,7 @@
 		C5A4567A28DD633300285E5C /* screen18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = screen18.swift; sourceTree = "<group>"; };
 		C5A4567C28DD696D00285E5C /* screen19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = screen19.swift; sourceTree = "<group>"; };
 		C8117B7E29EA498B0027CD93 /* screen32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = screen32.swift; sourceTree = "<group>"; };
+		C8117B8029EA7D660027CD93 /* screen33.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = screen33.swift; sourceTree = "<group>"; };
 		C812AE352931C0A200017D31 /* screen23.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = screen23.swift; sourceTree = "<group>"; };
 		C812AE522931E2F900017D31 /* screen24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = screen24.swift; sourceTree = "<group>"; };
 		C8337A6D28DC769B001F9A02 /* screen17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = screen17.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				C893653929C5AD7600DFA228 /* screen30.swift */,
 				C893653B29CEE70100DFA228 /* screen31.swift */,
 				C8117B7E29EA498B0027CD93 /* screen32.swift */,
+				C8117B8029EA7D660027CD93 /* screen33.swift */,
 				C89466F7297ACEFE0011D590 /* newview.swift */,
 				C8D7494D27E7EA2000946C5C /* swiftui02App.swift */,
 				C8D7495127E7EA2200946C5C /* Assets.xcassets */,
@@ -251,6 +254,7 @@
 				C54FE41D28D75C4F008AD4D3 /* screen14.swift in Sources */,
 				C893653829C59F9200DFA228 /* screen29.swift in Sources */,
 				C8FE7ABA28DDB08A0090548E /* screen20.swift in Sources */,
+				C8117B8129EA7D660027CD93 /* screen33.swift in Sources */,
 				C8D7495E27E7ED3B00946C5C /* screen03.swift in Sources */,
 				C84212FD27EFFC01007597DC /* screen07.swift in Sources */,
 				C893653A29C5AD7600DFA228 /* screen30.swift in Sources */,

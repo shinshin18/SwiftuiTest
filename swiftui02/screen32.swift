@@ -8,40 +8,26 @@
 import SwiftUI
 
 struct screen32: View {
-    @State var searchTextEntered: String = ""
-    var allCatNames = ["ムギ", "ソラ", "リン"]
-
-    var body: some View {
-        NavigationView {
-            Form {
-                List {
-                    ForEach(allCatNames, id: \.self) { catName in
-                        Text(catName)
-                            .swipeActions(edge: .leading) {
-                                Button {
-                                    print("pinned \(catName)")
-                                } label: {
-                                    Image(systemName: "bookmark")
-                                }
-                                .tint(.blue)
-                            }
-                    }
-                }
-                .searchable(text: $searchTextEntered)
-            }
-        }
-        .navigationViewStyle(StackNavigationViewStyle())
-    }
-
-    var searchResults: [String] {
-        if searchTextEntered.isEmpty {
-            return allCatNames
-        } else {
-            return allCatNames.filter { catName in
-                return catName.contains(searchTextEntered)
-            }
-        }
-    }
+    @State private var labelPosX:CGFloat = 0
+       var body: some View {
+           Text("Hello, World!")
+           .offset(x: labelPosX)
+           .gesture(DragGesture()
+               .onEnded({ value in
+                   if (abs(value.translation.width) < 10) { return } // too small movement, ignore note: 10 is default value for minimumDistance
+                   if (value.translation.width < 0 ) {
+                       // swiped to left
+                       print("swipe to left")
+                       self.labelPosX -= 30
+                   } else if (value.translation.width > 0 ) {
+                       // swiped to right
+                       print("swipe to right")
+                       self.labelPosX += 30
+                   }
+                   print("whdht:\(value.translation.width) height:\(value.translation.height)")
+               })
+           )
+       }
 }
 
 struct screen32_Previews: PreviewProvider {
