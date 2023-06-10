@@ -109,6 +109,9 @@ struct ContentView: View {
                 }
                 Group {
                     NavigationLink(destination: screen33()) {
+                        Text("Orientation Observer")
+                    }
+                    NavigationLink(destination: screen34()) {
                         Text("諸々")
                     }
                 }

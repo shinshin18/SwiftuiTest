@@ -2,7 +2,7 @@
 //  screen34.swift
 //  swiftui02
 //
-//  Created by Nobuhito Ogawa on 2023/06/10.
+//  Created by Nobuhito Ogawa on 2023/01/20.
 //
 
 import SwiftUI
@@ -15,6 +15,6 @@ struct screen34: View {
 
 struct screen34_Previews: PreviewProvider {
     static var previews: some View {
-        screen34()
+        newview()
     }
 }
