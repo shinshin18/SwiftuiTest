@@ -112,6 +112,9 @@ struct ContentView: View {
                         Text("Orientation Observer")
                     }
                     NavigationLink(destination: screen34()) {
+                        Text("通知")
+                    }
+                    NavigationLink(destination: screen35()) {
                         Text("諸々")
                     }
                 }
